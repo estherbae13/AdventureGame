@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3305AC9-B19B-489D-8189-326C6B6B1B7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdventureGame</RootNamespace>
+    <AssemblyName>AdventureGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scary-Titus_Calen-1449371204.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad_Trombone-Joe_Lamb-665429450.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ta Da-SoundBible.com-1884170640.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunted house.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Incoming_Suspense-Maximilien_-1060577487.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Creaking Door Spooky-SoundBible.com-1909842345.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spooky Water Drops-SoundBible.com-50164895.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fast-Flipping-Page-Shuffling-A2-www.fesliyanstudios.com.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WAV109.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stairs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hallway.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room on fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staircase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youwin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youlose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youwin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghost.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
